@@ -1,6 +1,13 @@
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <MetaTags />
+    <img
+      alt="Vue logo"
+      class="logo"
+      src="@/assets/logo.svg"
+      width="125"
+      height="125"
+    />
     <ReloadPrompt />
     <div class="wrapper">
       <HelloWorld :msg="$frontmatter.title" />
@@ -16,7 +23,7 @@
 </template>
 
 <style>
-@import '~/assets/base.css';
+@import "~/assets/base.css";
 
 #app {
   max-width: 1280px;
