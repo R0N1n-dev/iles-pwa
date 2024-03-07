@@ -1,0 +1,22 @@
+{
+  "name": "iles-app",
+  "version": "0.0.0",
+  "scripts": {
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal public/logo.svg",
+    "dev": "iles dev --open",
+    "build": "iles build",
+    "preview": "iles preview --open --port 5050",
+    "now": "npm run build && npm run preview",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "engines": {
+    "node": "^14.18 || >= 16.0.0"
+  },
+  "devDependencies": {
+    "@islands/pwa": "^0.9.1",
+    "@vite-pwa/assets-generator": "^0.2.4",
+    "iles": "^0.9.5",
+    "typescript": "^5.4.2",
+    "vue-tsc": "^2.0.6"
+  }
+}
