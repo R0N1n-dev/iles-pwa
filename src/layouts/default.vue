@@ -22,6 +22,23 @@
   <slot />
 </template>
 
+<script setup>
+useHead({
+  script: [
+    {
+      async: true,
+      src: "https://cdn.jsdelivr.net/npm/@inkline/inkline/dist/inkline.js",
+    },
+  ],
+  link: [
+    {
+      rel: "stylesheet",
+      href: "https://cdn.jsdelivr.net/npm/@inkline/inkline/dist/inkline.css",
+    },
+  ],
+});
+</script>
+
 <style>
 @import "~/assets/base.css";
 

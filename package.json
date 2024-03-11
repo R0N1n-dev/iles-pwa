@@ -18,5 +18,8 @@
     "iles": "^0.9.5",
     "typescript": "^5.4.2",
     "vue-tsc": "^2.0.6"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.9.0"
   }
 }
